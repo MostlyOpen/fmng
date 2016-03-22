@@ -36,3 +36,4 @@ nosetests.xml
 .pydevproject
 
 data/data
+data/odoo_api
