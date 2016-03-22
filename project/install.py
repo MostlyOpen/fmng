@@ -22,7 +22,7 @@ import base
 import admin_groups_id
 import data_admin_groups_id
 
-import erppeek
+from erppeek import *
 
 
 def install_update_module(module, update, config_admin=False):
