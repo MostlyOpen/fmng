@@ -95,23 +95,51 @@ if __name__ == '__main__':
     # tag_args = []
     # db_path = 'data/fmng.sqlite'
     # print('-->', client, tag_args, db_path)
-    # print('--> Executing export_clv_tag_sqlite()...')
+    # print('--> Executing clv_tag_export_sqlite()...')
     # print()
-    # export_clv_tag_sqlite(client, tag_args, db_path)
+    # clv_tag_export_sqlite(client, tag_args, db_path)
 
     # file_category_args = []
     # db_path = 'data/fmng.sqlite'
     # print('-->', client, file_category_args, db_path)
-    # print('--> Executing export_clv_file_category_sqlite()...')
+    # print('--> Executing clv_file_category_export_sqlite()...')
     # print()
-    # export_clv_file_category_sqlite(client, file_category_args, db_path)
+    # clv_file_category_export_sqlite(client, file_category_args, db_path)
 
     # file_args = []
     # db_path = 'data/fmng.sqlite'
     # print('-->', client, file_args, db_path)
-    # print('--> Executing export_clv_file_sqlite()...')
+    # print('--> Executing clv_file_export_sqlite()...')
     # print()
-    # export_clv_file_sqlite(client, file_args, db_path)
+    # clv_file_export_sqlite(client, file_args, db_path)
+
+    # tag_args = []
+    # db_path = 'data/fmng.sqlite'
+    # print('-->', client, tag_args, db_path)
+    # print('--> Executing clv_tag_import_sqlite()...')
+    # print()
+    # clv_tag_import_sqlite(client, tag_args, db_path)
+
+    # file_category_args = []
+    # db_path = 'data/fmng.sqlite'
+    # print('-->', client, file_category_args, db_path)
+    # print('--> Executing clv_file_category_import_sqlite()...')
+    # print()
+    # clv_file_category_import_sqlite(client, file_category_args, db_path)
+
+    # file_args = []
+    # db_path = 'data/fmng.sqlite'
+    # print('-->', client, file_args, db_path)
+    # print('--> Executing clv_file_import_sqlite()...')
+    # print()
+    # clv_file_import_sqlite(client, file_args, db_path)
+
+    # file_args = []
+    # db_path = 'data/fmng.sqlite'
+    # print('-->', client, file_args, db_path)
+    # print('--> Executing clv_file_import_parent_id_sqlite()...')
+    # print()
+    # clv_file_import_parent_id_sqlite(client, file_args, db_path)
 
     print()
     print('--> fmng.py', '- Execution time:', secondsToStr(time() - start))
