@@ -1,22 +1,23 @@
 #!/usr/bin/env python
-# -*- encoding: utf-8 -*-
-################################################################################
-#                                                                              #
-# Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol                  #
-#                                                                              #
-# This program is free software: you can redistribute it and/or modify         #
-# it under the terms of the GNU Affero General Public License as published by  #
-# the Free Software Foundation, either version 3 of the License, or            #
-# (at your option) any later version.                                          #
-#                                                                              #
-# This program is distributed in the hope that it will be useful,              #
-# but WITHOUT ANY WARRANTY; without even the implied warranty of               #
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                #
-# GNU Affero General Public License for more details.                          #
-#                                                                              #
-# You should have received a copy of the GNU Affero General Public License     #
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.        #
-################################################################################
+# -*- coding: utf-8 -*-
+###############################################################################
+#
+# Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+###############################################################################
 
 import base
 
@@ -56,40 +57,40 @@ def Administrator_groups_id_clv_base():
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'User (clv)')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Super User (clv)')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Manager (clv)')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Register Manager (clv)')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Super Manager (clv)')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
 
     print 'Done.'
@@ -112,16 +113,16 @@ def Administrator_groups_id_clv_tag():
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Tag User')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Tag Manager')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
 
     print 'Done.'
@@ -144,16 +145,16 @@ def Administrator_groups_id_clv_annotation():
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Annotation User')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'Annotation Manager')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
 
     print 'Done.'
@@ -176,24 +177,24 @@ def Administrator_groups_id_clv_file():
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'File User')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'File Manager')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
     values = {
         'groups_id': [(
             4, sock.execute(base.dbname, uid, base.admin_user_pw,
                             'res.groups', 'search', [('name', '=', 'File Category Manager')]
                             )[0]
-            )],
-        }
+        )],
+    }
     sock.execute(base.dbname, uid, base.admin_user_pw, 'res.users', 'write', user_id, values)
 
     print 'Done.'
